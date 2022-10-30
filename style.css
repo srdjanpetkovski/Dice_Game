@@ -8,6 +8,16 @@ BASIC STYLES
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -818px;
+    top: 230px;
+}
 body {
     font-family: 'Trispace', sans-serif;
     font-size: 18px;
@@ -17,17 +27,27 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
+    
 }
 
 main {
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.35);
+    backdrop-filter: blur(200px);
     width: 80%;
     text-align: center;
     margin: auto;
     height: 80vh;
     border-radius: 15px;
+    box-shadow: 0 0 20px;
+    overflow: hidden;
+}
+.player {
+    flex: 50%;
+}
+.active {
+    background-color: rgba(128, 128, 128, 0.4);
 }
 .name {
     font-size: 40px;
@@ -36,19 +56,45 @@ main {
 }
 .score {
     color: #ffb366;
-    font-size: 55px;
+    font-size: 60px;
     margin-top: 30px;
 }
 .current {
     background-color: #ffb366;
     border-radius: 15px;
-    margin-top: 150px;
-    padding: 15px;
+    margin: 150px auto 0 auto;
+    padding: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    width: 30%;
 }
-
 .current p:last-child {
     font-size: 30px;
     margin-top: 20px;
+}
+.btnsImg {
+    position: relative;
+}
+.btn {
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.new {
+    position: absolute;
+    left: -860px;
+    top: 110px;
+}
+.roll {
+    position: absolute;
+    left: -860px;
+    top: 450px;
+}
+.hold {
+    position: absolute;
+    left: -836px;
+    top: 550px;
 }

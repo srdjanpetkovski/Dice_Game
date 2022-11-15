@@ -11,6 +11,9 @@ BASIC STYLES
 html {
     scroll-behavior: smooth;
 }
+.hidden {
+    display: none;
+}
 img {
     max-width: 100px;
     height: 100px;
@@ -46,8 +49,12 @@ main {
 .player {
     flex: 50%;
 }
-.active {
+.player--winner {
+    background-color:#737373;
+}
+.player--active {
     background-color: rgba(128, 128, 128, 0.4);
+    transition: all 0.5s;
 }
 .name {
     font-size: 40px;
@@ -59,10 +66,13 @@ main {
     font-size: 60px;
     margin-top: 30px;
 }
+.winner {
+    margin-top: 30px;
+}
 .current {
     background-color: #ffb366;
     border-radius: 15px;
-    margin: 150px auto 0 auto;
+    margin: 100px auto 0 auto;
     padding: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;

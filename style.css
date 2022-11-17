@@ -25,18 +25,17 @@ body {
     font-family: 'Trispace', sans-serif;
     font-size: 18px;
     height: 100vh;
-    background-image: linear-gradient(to top left, #ff9933 0%, #804000 100%);
+    background-image: linear-gradient(to top left, #8aefd8 0%, #Cebb3c 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    
 }
 
 main {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(128, 128, 128, 0.35);
+    background-color: rgba(234, 29, 14, 0.35);
     backdrop-filter: blur(200px);
     width: 80%;
     text-align: center;
@@ -50,10 +49,10 @@ main {
     flex: 50%;
 }
 .player--winner {
-    background-color:#737373;
+    background-color:#4c81e2;
 }
 .player--active {
-    background-color: rgba(128, 128, 128, 0.4);
+    background-color: rgba(243, 7, 11, 0.4);
     transition: all 0.5s;
 }
 .name {
@@ -62,7 +61,7 @@ main {
     margin-top: 100px;
 }
 .score {
-    color: #ffb366;
+    color: #73f307;
     font-size: 60px;
     margin-top: 30px;
 }
@@ -107,4 +106,44 @@ main {
     position: absolute;
     left: -836px;
     top: 550px;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+    .current {
+        margin: 120px auto 0 auto;
+        padding: 15px;
+        letter-spacing: 0px;
+        width: 80%;
+    }
+    .main {
+        height: 100vh;
+        overflow: auto;
+    }
+    .btnsImg {
+        position: inherit;
+    }
+    .new {
+        left: 115px;
+        top: 115px;
+    }
+    .roll {
+        left: 115px;
+        top: 640px;
+    }
+    .hold {
+        left: 135px;
+        top: 730px;
+    }
+    .winner {
+        margin: 30px auto 30px auto;
+        font-size: 18px;
+    }
+    img {
+        max-width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 166px;
+        top: 400px;
+    }
 }
